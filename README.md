@@ -8,5 +8,5 @@
 <h4 align="center">A guide to provide consistency, uniformity and structure in software development to improve the workflow and increase productivity.</h4>
 
 ## Table of contents
-- [Branching](BRANCHING.md)
-- [Release Cycle](RELEASE-CYCLE.md)
+- [Branching](branching.md)
+- [Release Cycle](release-cycle.md)
