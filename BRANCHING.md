@@ -14,6 +14,11 @@
     <tr>
       <td>Stable</td>
       <td>stable</td>
+      <td>Accepts merges from Dev and Hotfixes</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>dev</td>
       <td>Accepts merges from Working and Hotfixes</td>
     </tr>
     <tr>
@@ -36,16 +41,19 @@
 
 ## Main Branches
 
-The main repository will always hold two evergreen branches:
+The main repository will always hold three evergreen branches:
 
 * `master`
+* `dev`
 * `stable`
 
 The main branch should be considered `origin/master` and will be the main branch where the source code of `HEAD` always reflects a state with the latest delivered development changes for the next release. As a developer, you will be branching and merging from `master`.
 
+Consider `origin/dev` to always represent the latest code deployed to internal or external testing. During day to day development, the `dev` branch will not be interacted with.
+
 Consider `origin/stable` to always represent the latest code deployed to production. During day to day development, the `stable` branch will not be interacted with.
 
-When the source code in the `master` branch is stable and has been deployed, all of the changes will be merged into `stable` and tagged with a release number. *How this is done in detail will be discussed later.*
+The source code in the `master` branch is merged to `dev` based on the release cycle and when deemed stable, it will be merged into `stable` and tagged with a release number. *How this is done in detail will be discussed later.*
 
 ## Supporting Branches
 
@@ -133,15 +141,16 @@ $ git push origin :bug-id                           // deletes the remote branch
 
 ### Hotfix Branches
 
-A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment. Due to these requirements, a hotfix branch is always branched from a tagged `stable` branch. This is done for two reasons:
+A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment. Due to these requirements, a hotfix branch is always branched from a tagged `stable` or `dev` branch. This is done for two reasons:
 
 * Development on the `master` branch can continue while the hotfix is being addressed.
-* A tagged `stable` branch still represents what is in production. At the point in time where a hotfix is needed, there could have been multiple commits to `master` which would then no longer represent production.
+* A tagged `stable` or `dev` branch still represents what is in production. At the point in time where a hotfix is needed, there could have been multiple commits to `master` which would then no longer represent production.
 
 `<tbd number>` represents the Basecamp project to which Project Management will be tracked. 
 
-* Must branch from: tagged `stable`
-* Must merge back into: `master` and `stable`
+* Must branch from: tagged `stable` or `dev`
+* Must merge back into: `master` and `dev` if hotfix is needed to `dev` branch
+* Must merge back into: `master`, `dev` and `stable` if hotfix is needed to `stable` branch
 * Branch naming convention: `hotfix-<tbd number>`
 
 #### Working with a hotfix branch
