@@ -10,3 +10,4 @@
 ## Table of contents
 - [Branching](branching.md)
 - [Release Cycle](release-cycle.md)
+- [Code Review](code-review.md)
