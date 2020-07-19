@@ -34,7 +34,7 @@
     <tr>
       <td>Hotfix</td>
       <td>hotfix-*</td>
-      <td>Always branch off Stable</td>
+      <td>Always branch off Stable or Dev</td>
     </tr>
   </tbody>
 </table>
