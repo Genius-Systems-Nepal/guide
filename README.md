@@ -9,3 +9,4 @@
 
 ## Table of contents
 - [Branching](BRANCHING.md)
+- [Release Cycle](RELEASE-CYCLE.md)
