@@ -38,7 +38,7 @@ greet(name) {
 int get length => ...
 ```
 
-/// is recognized by dart as dart doc so when you press [Ctrl + Q] or [Ctrl + J] the documentation will pop on Android Studio as Quick documentation lookup.
+/// is recognized by dart as dart doc so when you press [Ctrl + Q on Windows/Linux] or [Ctrl + J on Mac] the documentation will pop on Android Studio as Quick documentation lookup.
 
 
 ## Square brackets
