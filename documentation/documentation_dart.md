@@ -31,7 +31,7 @@ greet(name) {
 
 ## Doc Comments
 
-# Use /// doc comments to document member types.
+### Use /// doc comments to document member types.
 
 ```
 /// The number of characters in this chunk when unsplit.
@@ -40,7 +40,7 @@ int get length => ...
 
 ## Square brackets
 
-# Use [] in doc comments to refer to in-scope indetifiers.
+### Use [] in doc comments to refer to in-scope indetifiers.
 
 If you surround things like variable, method, or type names in square brackets, then dartdoc looks ip the name and links to the relevant API docs. Parentheses are optional, but cam make it cleare when you're referring to a method or constructor.
 
@@ -48,7 +48,7 @@ If you surround things like variable, method, or type names in square brackets, 
 /// Similar to [Duration.inDays], but handles fractional days.
 ```
 
-# The convention in Dart is to integrate that into the description of the method and highlight parameters using square brackets.
+### The convention in Dart is to integrate that into the description of the method and highlight parameters using square brackets.
 
 ```
 /// Defines a flag.
@@ -60,7 +60,7 @@ Flag addFlag(String name, String abbr) => ...
 
 ## Include code sample
 
-# If your code is complex it is always a good idea to include code sample in the document as well.
+### If your code is complex it is always a good idea to include code sample in the document as well.
 
 ```
 /// Returns the lesser of two numbers.
@@ -71,8 +71,8 @@ Flag addFlag(String name, String abbr) => ...
 num min(num a, num b) => ...
 ```
 
-# Note: You do not have to comment every method. Some method can be self explanatory.
+### Note: You do not have to comment every method. Some method can be self explanatory.
 
-# Resource Link.
+### Resource Link.
 
 [Dart official documentation Guide](https://dart.dev/guides/language/effective-dart/documentation)  
