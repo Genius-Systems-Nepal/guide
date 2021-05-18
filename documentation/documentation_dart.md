@@ -75,4 +75,4 @@ num min(num a, num b) => ...
 
 # Resource Link.
 
-![Dart official documentation Guide](https://dart.dev/guides/language/effective-dart/documentation)  
+[Dart official documentation Guide](https://dart.dev/guides/language/effective-dart/documentation)  
