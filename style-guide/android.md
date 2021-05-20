@@ -4,21 +4,25 @@ The following are useful tips and conventions for writing descriptions in doc co
 **. Use 3rd person (descriptive) not 2nd person (prescriptive).**
 The description is in 3rd person declarative rather than 2nd person imperative.
 >Gets the label. (preferred)
+>
 >Get the label. (avoid)
 
 **. Method descriptions begin with a verb phrase.**
 A method implements an operation, so it usually starts with a verb phrase:
 >Gets the label of this button. (preferred)
+>
 >This method gets the label of this button.
 
 **. Class/interface/field descriptions can omit the subject and simply state the object.**
 These API often describe things rather than actions or behaviors:
 >A button label. (preferred)
+>
 >This field is a button label. (avoid)
 
 **. Use "this" instead of "the" when referring to an object created from the current class.**
 For example, the description of the getToolkit method should read as follows:
 >Gets the toolkit for this component. (preferred)
+>
 >Gets the toolkit for the component. (avoid)
 
 **. OK to use phrases instead of complete sentences, in the interests of brevity.**
