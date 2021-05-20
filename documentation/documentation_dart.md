@@ -45,7 +45,7 @@ int get length => ...
 
 ### Use [] in doc comments to refer to in-scope indetifiers.
 
-If you surround things like variable, method, or type names in square brackets, then dartdoc looks ip the name and links to the relevant API docs. Parentheses are optional, but cam make it cleare when you're referring to a method or constructor.
+If you surround things like variable, method, or type names in square brackets, then dartdoc looks up the name and links to the relevant API docs. Parentheses are optional, but can make it clearer when you're referring to a method or constructor.
 
 ```
 /// Similar to [Duration.inDays], but handles fractional days.
