@@ -92,3 +92,11 @@ Be aware that the word "field" has two meanings:
 **Avoid Latin**
 
 use "also known as" instead of "aka", use "that is" or "to be specific" instead of "i.e.", use "for example" instead of "e.g.", and use "in other words" or "namely" instead of "viz."
+
+
+### Note: You do not have to comment every method. Some method can be self explanatory.
+
+### Resource Link.
+
+[For more detail info](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
+
